@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <!-- TITLE -->
+    <title>Color Generator</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="hex-container">
+        <div>
+          <p id="hex-color-value">#ffffff</p>
+          <button type="button">Create hex color</button>
+          <button type="button" class="copy">Copy To Clipboard</button>
+        </div>
+      </section>
+      <section class="rgb-container">
+        <div>
+          <label for="red">Red</label>
+          <input
+            type="range"
+            name="red-range"
+            id="red"
+            min="0"
+            max="255"
+            value="0"
+          />
+        </div>
+
+        <div>
+          <label for="green">Green</label>
+          <input
+            type="range"
+            name="green-range"
+            id="green"
+            min="0"
+            max="255"
+            value="0"
+          />
+        </div>
+
+        <div>
+          <label for="blue">Blue</label>
+          <input
+            type="range"
+            name="blue-range"
+            id="blue"
+            min="0"
+            max="255"
+            value="0"
+          />
+        </div>
+        <div class="buttons">
+          <button type="button">Create RGB Color</button>
+          <button type="button" class="copy">Copy To Clipboard</button>
+        </div>
+        <div>
+          <p class="demo"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
